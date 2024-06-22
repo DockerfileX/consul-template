@@ -11,5 +11,7 @@ LABEL version=${VERSION}
 # 镜像的描述
 LABEL description="consul-template v${VERSION}"
 
-COPY ./run.sh /bin/
-RUN chmod +x /bin/run.sh && /bin/run.sh
+USER root
+COPY ./run.sh /
+RUN chmod +x /run.sh
+RUN /run.sh
