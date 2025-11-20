@@ -15,5 +15,5 @@
 == 3. 编译并上传镜像
 [source,shell]
 ----
-docker buildx build --platform linux/arm64,linux/amd64 -t nnzbz/consul-template:0.39 --build-arg VERSION=0.39 . --push
+docker buildx build --platform linux/arm64,linux/amd64 -t nnzbz/consul-template:0.41 --build-arg VERSION=0.41 . --push
 ----
